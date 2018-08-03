@@ -9,4 +9,9 @@ export class Age {
   isValidBirthday(){
     return (this.birthday - Date.now() < 0);
   }
+
+  //Returns the difference of a birthday and a date in seconds
+  timeDifference(date){
+    return (date - this.birthday)/1000;
+  }
 }
