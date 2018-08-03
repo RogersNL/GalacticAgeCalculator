@@ -18,18 +18,18 @@ export class Age {
   //Conversions to Mercury, Venus, Mars, and Jupiter years
   toMercury(date){
     let inputtedDate = date;
-    return this.timeDifference(inputtedDate)/0.24;
+    return Math.round(this.timeDifference(inputtedDate)/0.24);
   }
   toVenus(date){
     let inputtedDate = date;
-    return this.timeDifference(inputtedDate)/0.62;
+    return Math.round(this.timeDifference(inputtedDate)/0.62);
   }
   toMars(date){
     let inputtedDate = date;
-    return this.timeDifference(inputtedDate)/1.88;
+    return Math.round(this.timeDifference(inputtedDate)/1.88);
   }
   toJupiter(date){
     let inputtedDate = date;
-    return this.timeDifference(inputtedDate)/11.86;
+    return Math.round(this.timeDifference(inputtedDate)/11.86);
   }
 }
