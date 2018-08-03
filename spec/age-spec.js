@@ -13,4 +13,10 @@ describe('Age', function() {
     let newAge = new Age(birthday, "male", 4,3);
     expect(newAge.timeDifference(futureDate)).toEqual(345600);
   });
+  it('will return the age in seconds for Mercury', function() {
+    let birthday = new Date('1995-04-19');
+    let futureDate = new Date('1995-05-02');
+    let newAge = new Age(birthday, "female", 5,5);
+    expect(newAge.toMercury(futureDate)).toEqual(4680000);
+  });
 });
